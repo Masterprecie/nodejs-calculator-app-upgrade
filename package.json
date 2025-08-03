@@ -1,0 +1,31 @@
+{
+  "name": "calculator-app",
+  "description": "This is a simple calculator app built with Node.js. It allows users to perform basic arithmetic operations interactively.",
+  "version": "1.0.0",
+  "main": "dist/calculator.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/calculator.js",
+    "dev": "ts-node src/calculator.ts",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Precious Ikpa",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/node": "^24.1.0",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "prettier": "3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  }
+}
